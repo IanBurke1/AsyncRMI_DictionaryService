@@ -5,6 +5,7 @@ import java.rmi.registry.LocateRegistry;
 
 /*
  * Look Up Service
+ * Main method
  */
 
 public class Server {
@@ -21,7 +22,7 @@ public class Server {
 		LocateRegistry.createRegistry(1099);
 		
 		//Bind our remote object to the registry with the human-readable name "fileService"
-		Naming.rebind("", ds);
+		Naming.rebind("DictionaryService", ds);
 		 
 		System.out.println("Server ready");
 		

@@ -1,0 +1,35 @@
+package ie.gmit.sw.server;
+
+import java.rmi.Naming;
+import java.rmi.registry.LocateRegistry;
+
+/*
+ * Look Up Service
+ * Main method
+ */
+
+public class Server {
+	
+	public static void main(String[] args) {
+
+		try {
+			
+		
+		// Create an instance of a DictServiceImpl as it implements the  remote interface
+		DictionaryService ds = new DictServiceImpl();
+		
+		//Start the RMI registry on port 1099
+		LocateRegistry.createRegistry(1099);
+		
+		//Bind our remote object to the registry with the human-readable name "fileService"
+		Naming.rebind("dictionaryService", ds);
+		 
+		System.out.println("Server ready");
+		
+		} catch (Exception e) {
+			System.err.println("Server error" + e.toString());
+			e.printStackTrace();
+		}
+	}
+
+}
