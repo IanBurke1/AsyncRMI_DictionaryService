@@ -1,0 +1,13 @@
+package ie.gmit.sw.client;
+
+/*
+ * Request for remote object
+ */
+
+public class Client {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}
