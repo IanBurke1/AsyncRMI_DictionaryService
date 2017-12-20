@@ -1,0 +1,29 @@
+package ie.gmit.sw;
+
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+
+public class DictServiceImpl extends UnicastRemoteObject implements DictionaryService {
+	private static final long serialVersionUID = 1L; 
+	
+	//Constructor
+	protected DictServiceImpl() throws RemoteException {
+		super();
+		
+	}
+
+	@Override
+	public String lookup() throws RemoteException {
+		
+		return null;
+	}
+
+	@Override
+	public void result() throws RemoteException {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

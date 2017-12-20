@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.rmi.Remote"/>
+<fullyQualifiedTypeName name="java.rmi.server.UnicastRemoteObject"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ScheduledExecutorService"/>
+<fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+<fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+<fullyQualifiedTypeName name="java.util.concurrent.BlockingQueue"/>
+<fullyQualifiedTypeName name="java.util.concurrent.ArrayBlockingQueue"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+<fullyQualifiedTypeName name="java.rmi.RemoteException"/>
+<fullyQualifiedTypeName name="ie.gmit.sw.DictionaryService"/>
+<fullyQualifiedTypeName name="java.rmi.registry.LocateRegistry"/>
+<fullyQualifiedTypeName name="java.rmi.Naming"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+</qualifiedTypeNameHistroy>
