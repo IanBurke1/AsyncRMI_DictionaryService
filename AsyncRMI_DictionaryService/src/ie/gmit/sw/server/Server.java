@@ -5,8 +5,8 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 
 /*
- * Look Up Service
- * Main method
+ * This class contains the main method to run the remote Server
+ * 
  */
 
 public class Server {

@@ -7,9 +7,14 @@
 <title>Word Definition</title>
 </head>
 <body>
+<h1>Dictionary Service</h1>
 	<% 
 		String def = (String) request.getAttribute("def");
-		out.print("Def: " + def); 
+		String word = (String) request.getAttribute("word");
+		out.print(word + ", DEFINITON:  " + def); 
 	%>
+	<br/>
+	<br/>
+	<a href="index.jsp" id="index">Home</a>
 </body>
 </html>

@@ -1,0 +1,12 @@
+package ie.gmit.sw.server;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+public class RequestQueue extends Thread {
+	
+	private Request req;
+	
+	private BlockingQueue<Request> inQueue = new ArrayBlockingQueue<Request>(10);
+	private BlockingQueue<Request> outQueue = new ArrayBlockingQueue<Request>(10);
+}

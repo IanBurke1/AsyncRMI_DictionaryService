@@ -15,5 +15,18 @@
     <input name="query" placeholder="Enter Query here">
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
+<br/>
+<p>Dictionary used is a 1913 US Webster's Unabridged Dictionary. </p>
+<p> Dictionary contains words a to z. E.g. java</p>
+
+<br/>
+<!--   
+<h1>Delete Word</h1>
+<form action="DictionaryServlet" method="post">
+  
+    <input name="delete" placeholder="Enter word here">
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+-->
 </body>
 </html>

@@ -1,0 +1,27 @@
+package ie.gmit.sw.server;
+
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+public class RequestQueue implements Runnable {
+	
+	private Request req;
+	private int capacity = 10;
+	
+	private BlockingQueue<Request> inQueue;
+	private BlockingQueue<Request> outQueue;
+	
+	public RequestQueue() {
+		inQueue = new ArrayBlockingQueue<Request>(capacity);
+		outQueue = new ArrayBlockingQueue<Request>(capacity);
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+		if()
+		
+	}
+
+}

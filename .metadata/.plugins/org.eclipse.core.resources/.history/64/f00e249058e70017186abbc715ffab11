@@ -1,0 +1,32 @@
+package ie.gmit.sw.server;
+
+import java.rmi.Naming;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+public class RequestQueue implements Runnable {
+	
+	private Request req;
+	private int capacity = 10;
+	
+	private BlockingQueue<Request> inQueue;
+	private BlockingQueue<Request> outQueue;
+	
+	public RequestQueue(BlockingQueue<Request> inQueue, BlockingQueue<Request> outQueue) {
+		inQueue = new ArrayBlockingQueue<Request>(capacity);
+		outQueue = new ArrayBlockingQueue<Request>(capacity);
+		
+	}
+	/*
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+		if(req != null){
+			DictionaryService ds = (DictionaryService) Naming.lookup("rmi://127.0.0.1:1099/DictionaryService"); 
+			String response = ds.lookup(inQueue);
+		}
+		
+	}*/
+
+}

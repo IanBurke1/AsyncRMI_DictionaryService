@@ -1,10 +1,23 @@
 package ie.gmit.sw.server;
 
+/*
+ * The interface which will tell your client how to interact with 
+ * the file hosting service. The interface will extend java.rmi.Remote
+ */
+
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
 public interface DictionaryService extends Remote {
 	
+	//========= Remote Methods ========================================================
+	
+	// lookup() to look up word def
 	public String lookup(String query) throws RemoteException;
 	
+	// Did not get delete and edit working
+	// delete() to delete a word in dictionary
+	public String delete(String word)  throws RemoteException;
+	// edit() to edit a word in dictionary
+	public String edit(String word, String newWord) throws RemoteException;
 }

@@ -14,7 +14,7 @@ public class Dictionary {
 	public void loadDictionary() throws Exception, RemoteException {
 		
 		// Using BufferedReader to read through each line of the file.
-		BufferedReader br = new BufferedReader(new FileReader("dictionary2.txt"));
+		BufferedReader br = new BufferedReader(new FileReader("dictionary.txt"));
 		
 		// line variable represents each line in dictionary file
 		String line = null;
@@ -22,9 +22,11 @@ public class Dictionary {
 		// loop through the dictionary file
 		// while line equals line in file and not equal to null then...
 		while ((line = br.readLine()) != null) {
+			
+		
 
 			// Splitting each line in file by a comma and storing in array of type string
-			String[] words = line.split(",");
+			String[] words = line.split(",", 2);
 			
 			/*
 			// Ignore empty lines
