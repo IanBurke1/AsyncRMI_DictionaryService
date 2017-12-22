@@ -19,7 +19,9 @@
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="java.rmi.registry.LocateRegistry"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="java.rmi.Naming"/>
-<fullyQualifiedTypeName name="ie.gmit.sw.server.DictionaryService"/>
 <fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="ie.gmit.sw.Dictionary"/>
+<fullyQualifiedTypeName name="ie.gmit.sw.DictionaryServlet"/>
+<fullyQualifiedTypeName name="ie.gmit.sw.server.DictionaryService"/>
+<fullyQualifiedTypeName name="java.rmi.Naming"/>
 </qualifiedTypeNameHistroy>

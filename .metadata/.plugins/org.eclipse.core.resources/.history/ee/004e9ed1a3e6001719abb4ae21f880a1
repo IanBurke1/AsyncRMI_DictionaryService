@@ -1,0 +1,62 @@
+package ie.gmit.sw.server;
+
+import java.io.BufferedReader;
+
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Hashtable;
+import java.util.LinkedHashMap;
+import java.util.List;
+
+public class Dictionary {
+	
+	// Create a LinkedHashMap that takes in key, value of type string from dictionary txt file.
+	private static LinkedHashMap<String, String> dictionary = new LinkedHashMap<String, String>();
+	
+	public void loadDictionary() throws Exception {
+		
+		// Using BufferedReader to read through each line of the file.
+		BufferedReader br = new BufferedReader(new FileReader("dictionary2.txt"));
+		
+		// line variable will contain each line in dictionary file
+		String line = null;
+		
+		// loop through the dictionary file
+		// while line equals line in file and not equal to null then...
+		while ((line = br.readLine()) != null) {
+
+			// Splitting each line in file by a comma and storing in array of type string
+			String[] words = line.split(",");
+			
+			/*
+			// Ignore empty lines
+			if (inputLine.equals("")){
+				continue;
+			}*/
+			
+			// Put the first set of values, in lower case, into Key  of the hashmap
+			// Put 2nd set of values into value of the hashmap
+			dictionary.put(words[0].toLowerCase(), words[1]);
+			
+		} //end while
+	
+	} // end loadDictionary()
+	
+	public String lookup(){
+		String word = "amber";
+		
+		// If hashmap contains the key "word" (users query) then..
+		if(dictionary.containsKey(word)){
+			
+			
+			System.out.println(word + " : " + dictionary.get(word));
+		} // end if
+		
+		return null;
+	}
+}
+

@@ -1,0 +1,68 @@
+package ie.gmit.sw.server;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.rmi.RemoteException;
+import java.rmi.server.UnicastRemoteObject;
+import java.util.LinkedHashMap;
+
+public class DictServiceImpl extends UnicastRemoteObject implements DictionaryService {
+	private static final long serialVersionUID = 1L; 
+	// Create a LinkedHashMap that takes in key, value of type string from dictionary txt file.
+	private static LinkedHashMap<String, String> dictionary = new LinkedHashMap<String, String>();
+	
+	//======= Constructor =========================================
+	protected DictServiceImpl() throws Exception {
+		super();
+	
+		
+		
+	}//contructor end
+	
+	
+	
+	
+	public void loadDictionary() throws Exception {
+		
+		// Using BufferedReader to read through each line of the file.
+		BufferedReader br = new BufferedReader(new FileReader("dictionary2.txt"));
+		
+		// line variable will contain each line in dictionary file
+		String line = null;
+		
+		// loop through the dictionary file
+		// while line equals line in file and not equal to null then...
+		while ((line = br.readLine()) != null) {
+
+			// Splitting each line in file by a comma and storing in array of type string
+			String[] words = line.split(",");
+			
+			/*
+			// Ignore empty lines
+			if (inputLine.equals("")){
+				continue;
+			}*/
+			
+			// Put the first set of values, in lower case, into Key  of the hashmap
+			// Put 2nd set of values into value of the hashmap
+			dictionary.put(words[0].toLowerCase(), words[1]);
+			
+		} //end while
+	
+	} // end loadDictionary()
+	
+	// Implementing lookup() from Remote interface
+	@Override
+	public String lookup(String query) throws RemoteException {
+		String result = null;
+		
+		// If hashmap contains the key "word" (users query) then..
+		if(dictionary.containsKey(query)){
+			return dictionary.get(query);
+			
+			//System.out.println(query + " : " + dictionary.get(query));
+		} // end if
+		return null;
+	}//lookup end
+	
+} //class end
