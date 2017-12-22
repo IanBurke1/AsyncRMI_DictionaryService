@@ -1,6 +1,7 @@
 package ie.gmit.sw.server;
 
 import java.rmi.Naming;
+import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 
 /*
@@ -10,11 +11,8 @@ import java.rmi.registry.LocateRegistry;
 
 public class Server {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 
-		try {
-			
-		
 		// Create an instance of a DictServiceImpl as it implements the  remote interface
 		DictionaryService ds = new DictServiceImpl();
 		
@@ -24,12 +22,9 @@ public class Server {
 		//Bind our remote object to the registry with the human-readable name "fileService"
 		Naming.rebind("DictionaryService", ds);
 		 
-		System.out.println("Server ready");
+		System.out.println("Server ready...");
 		
-		} catch (Exception e) {
-			System.err.println("Server error" + e.toString());
-			e.printStackTrace();
-		}
+		
 	}
 
 }

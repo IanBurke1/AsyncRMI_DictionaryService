@@ -24,4 +24,6 @@
 <fullyQualifiedTypeName name="ie.gmit.sw.DictionaryServlet"/>
 <fullyQualifiedTypeName name="ie.gmit.sw.server.DictionaryService"/>
 <fullyQualifiedTypeName name="java.rmi.Naming"/>
+<fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
