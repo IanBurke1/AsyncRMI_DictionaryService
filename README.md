@@ -18,7 +18,7 @@ https://github.com/ianburkeixiv/AsyncRMI_DictionaryService
 ### JSP
 ![]()
 
-Java Server Pages (JSP) is a server-side programming technology that enables the creation of dynamic, platform-independent method for building Web-based applications. JSP have access to the entire family of Java APIs, including the JDBC API to access enterprise databases.
+A JSP page is a text document that contains two types of text: static data, which can be expressed in any text-based format (such as HTML, SVG, WML, and XML). Java Server Pages (JSP) is a server-side programming technology that enables the creation of dynamic, platform-independent method for building Web-based applications. JSP have access to the entire family of Java APIs, including the JDBC API to access enterprise databases.
 
 ### RMI (Remote Method Innovation)
 
@@ -27,7 +27,7 @@ Tomcat Server v7 is used in this project.
 
 
 ### Servlet
-
+A Java servlet is a Java program that extends the capabilities of a server. Although servlets can respond to any types of requests, they most commonly implement applications hosted on Web servers.
 
 
 
