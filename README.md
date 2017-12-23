@@ -5,7 +5,9 @@ For my project in Distributed Systems, I am required to use the Servlet/JSP and 
 ## How to download project
 - Click [here](https://github.com/ianburkeixiv/AsyncRMI_DictionaryService/archive/master.zip) to download the project zip.
 - Unzip/extract the project to preferred directory.
+
 or
+
 ```bash
 git clone https://github.com/ianburkeixiv/AsyncRMI_DictionaryService.git
 ```
@@ -19,8 +21,6 @@ git clone https://github.com/ianburkeixiv/AsyncRMI_DictionaryService.git
 ![](https://user-images.githubusercontent.com/22341150/34322891-9e8e3bc2-e82b-11e7-9887-cb5cdea72a0e.PNG)
 
 ### JSP
-![](https://user-images.githubusercontent.com/22341150/34322892-a7733652-e82b-11e7-96fe-e7145a26f866.jpg)
-
 A JSP page is a text document that contains two types of text: static data, which can be expressed in any text-based format (such as HTML, SVG, WML, and XML). Java Server Pages (JSP) is a server-side programming technology that enables the creation of dynamic, platform-independent method for building Web-based applications. JSP have access to the entire family of Java APIs, including the JDBC API to access enterprise databases.
 
 ### RMI (Remote Method Innovation)
