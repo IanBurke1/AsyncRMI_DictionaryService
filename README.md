@@ -16,7 +16,9 @@ https://github.com/ianburkeixiv/AsyncRMI_DictionaryService
 ## Architecture
 
 ### JSP
-index.jsp contains the user input form and definition.jsp contains the result of the user query.
+![]()
+
+Java Server Pages (JSP) is a server-side programming technology that enables the creation of dynamic, platform-independent method for building Web-based applications. JSP have access to the entire family of Java APIs, including the JDBC API to access enterprise databases.
 
 ### RMI (Remote Method Innovation)
 
