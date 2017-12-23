@@ -8,7 +8,7 @@ The processing of a client request will require a RMI method invocation to a rem
 - Unzip/extract the project to preferred directory.
 
 **or**
-
+- Open command prompt with git and enter:
 ```bash
 git clone https://github.com/ianburkeixiv/AsyncRMI_DictionaryService.git
 ```
