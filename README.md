@@ -39,8 +39,7 @@ Apache Tomcat is used to deploy your Java Servlets and JSPs. So in your Java pro
 A Java servlet is a Java program that extends the capabilities of a server. Although servlets can respond to any types of requests, they most commonly implement applications hosted on Web servers.
 
 
-## Conclusion
-I have the word definition look up working with the servlet calling the remote dictionary service to get the definition of the word the user enters. I have failed to get a blocking queue working, where the request from servlet goes into a queue and same with the response. I tried to add the delete and edit features but ran out of time.
+
 
 
 
